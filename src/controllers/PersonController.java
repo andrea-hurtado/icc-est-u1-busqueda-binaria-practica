@@ -58,8 +58,8 @@ public class PersonController {
             System.out.print(people[i].getAge() + " | ");
             }
             System.out.println();
-            System.out.println("bajo= " + izquierda + " alto= " + derecha + " centro= " + medio + 
-                           "     valorCentro= " + edadMedio);
+            System.out.print("bajo= " + izquierda + " alto= " + derecha + " centro= " + medio + 
+                           "     valorCentro= " + edadMedio); //se quita el ln para que no de el salto de linea y se muestre en la misma fila
 
             if (edadMedio == targetAge) { 
                 System.out.println("-> ENCONTRADO");      

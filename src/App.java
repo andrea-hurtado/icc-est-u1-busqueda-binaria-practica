@@ -38,8 +38,7 @@ public class App {
 
         // mostramos el resultado
         sC.showPersonResult(encontrada, "Pedro");
-
-        
+       
         // ordenamos el arreglo por edad
         personaController.sortBurbujaPorEdad(people);
         sC.showArray(people); // Muestra el arreglo ordenado por edad

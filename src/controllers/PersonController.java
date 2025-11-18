@@ -53,16 +53,27 @@ public class PersonController {
         while (izquierda <= derecha) {
             int medio = (izquierda + derecha) / 2;
             int edadMedio = people[medio].getAge(); 
+            System.out.print("Actualización: ");
+            for (int i = izquierda; i <= derecha; i++) {
+            System.out.print(people[i].getAge() + " | ");
+            }
+            System.out.println();
+            System.out.println("bajo= " + izquierda + " alto= " + derecha + " centro= " + medio + 
+                           "     valorCentro= " + edadMedio);
 
-            if (edadMedio == targetAge) {       
+            if (edadMedio == targetAge) { 
+                System.out.println("-> ENCONTRADO");      
                 return people[medio];
             }
 
             if (edadMedio < targetAge) {
+                System.out.print("-> DERECHA");
                 izquierda = medio + 1;
             } else {
+                System.out.print("-> IZQUIERDA");
                 derecha = medio - 1;
             }
+            System.out.println();
         }
         return null;
     }
